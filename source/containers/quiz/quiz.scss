@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 100px;
+  padding: 100px 0;
   flex: 1 1 auto;
 
-  background: rgb(36, 31, 0);
   background: linear-gradient(
     90deg,
     rgba(36, 31, 0, 1) 0%,
@@ -13,12 +12,13 @@
     rgba(0, 212, 255, 1) 64%
   );
 
-  &__content {
+  &__main {
     display: block;
-    flex: 0 1 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
 
-    background-color: #fff;
+    border: 5px solid #fff;
     border-radius: 5px;
   }
 
@@ -29,6 +29,10 @@
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-    color: rgb(30, 236, 47);
+    color: #fff;
+  }
+
+  &__content {
+    margin-top: 40px;
   }
 }

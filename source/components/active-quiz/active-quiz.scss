@@ -1,0 +1,50 @@
+.active-quiz {
+  width: 100%;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__order {
+    display: inline-block;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__ask {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+
+    li {
+      display: block;
+      padding: 10px;
+      margin-bottom: 15px;
+
+      border: 2px solid #fff;
+      border-radius: 4px;
+
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
