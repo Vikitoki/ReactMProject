@@ -1,0 +1,34 @@
+.quiz {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 100px;
+  flex: 1 1 auto;
+
+  background: rgb(36, 31, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 31, 0, 1) 0%,
+    rgba(26, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 64%
+  );
+
+  &__content {
+    display: block;
+    flex: 0 1 400px;
+    padding: 20px;
+
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  &__title {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(30, 236, 47);
+  }
+}
