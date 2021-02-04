@@ -1,8 +1,8 @@
 import React from "react";
-
+import Button from "../UI/Button/Button";
 import "./finnaly-results.scss";
 
-const FinnalyResults = ({ quiz, results , onRetry }) => {
+const FinnalyResults = ({ quiz, results, onRetry }) => {
   const succesTotal = Object.keys(results).reduce((total, key) => {
     if (results[key] === "succes") {
       total++;
@@ -52,9 +52,9 @@ const FinnalyResults = ({ quiz, results , onRetry }) => {
           </div>
 
           <div className="finnaly-results__btns">
-            <button onClick = {onRetry} type="button" className="finnaly-results__btn">
+            <Button onClick={onRetry} type="primary">
               Повторить
-            </button>
+            </Button>
           </div>
         </div>
       </div>
