@@ -1,11 +1,17 @@
 import React from "react";
 import AnswersQuizListItem from "../answers-quiz-list-item/answers-quiz-list-item";
 
-import "./answers-quiz-list.scss";
-
-const AnswersQuizList = (props) => {
-  const answersListItems = props.answers.map((item, index) => {
-    return <AnswersQuizListItem key={index} text={item.text} />;
+const AnswersQuizList = ({ onQuestionClick, answers, answerState }) => {
+  const answersListItems = answers.map((item, index) => {
+    return (
+      <AnswersQuizListItem
+        answerState={answerState ? answerState[item.id] : null}
+        onQuestionClick={onQuestionClick}
+        key={index}
+        text={item.text}
+        idItem={item.id}
+      />
+    );
   });
 
   return <ul className="active-quiz__list">{answersListItems}</ul>;

@@ -1,9 +1,22 @@
 import React from "react";
 
-import "./answers-quiz-list-item.scss";
+const AnswersQuizListItem = ({
+  text,
+  onQuestionClick,
+  idItem,
+  answerState,
+}) => {
+  const cls = [];
 
-const AnswersQuizListItem = ({text }) => {
-  return <li>{text}</li>;
+  if (answerState) {
+    cls.push(answerState);
+  }
+
+  return (
+    <li className={cls.join("")} onClick={() => onQuestionClick(idItem)}>
+      {text}
+    </li>
+  );
 };
 
 export default AnswersQuizListItem;
