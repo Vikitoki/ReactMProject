@@ -55,6 +55,10 @@ const FinnalyResults = ({ quiz, results, onRetry }) => {
             <Button onClick={onRetry} type="primary">
               Повторить
             </Button>
+
+            <Button onClick={onRetry} type="succes">
+              Переключиться на лист с вопросами
+            </Button>
           </div>
         </div>
       </div>

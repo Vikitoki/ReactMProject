@@ -1,7 +1,9 @@
 .btn {
+	width: 100%;
   display: inline-block;
   vertical-align: middle;
-  padding: 12px 30px;
+	padding: 12px 30px;
+	margin-bottom: 15px;
 
   text-align: center;
   font-size: 18px;
@@ -37,6 +39,22 @@
 
     &:active {
       background-color: rgb(212, 20, 20);
+    }
+	}
+	
+  &.succes {
+
+		color: #333;
+		font-weight: 700;
+		
+    background-color: rgb(248, 251, 61);
+
+    &:hover {
+      background-color: rgb(238, 241, 24);
+    }
+
+    &:active {
+      background-color: rgb(202, 206, 22);
     }
   }
 
