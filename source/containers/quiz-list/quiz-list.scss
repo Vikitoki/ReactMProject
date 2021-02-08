@@ -1,0 +1,46 @@
+.quiz-list {
+  padding-top: 150px;
+  width: 100%;
+  flex: 1 1 auto;
+
+  text-align: center;
+
+  &__nav {
+    margin-top: 30px;
+    width: 100%;
+    min-height: 40px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      display: block;
+      margin-right: 20px;
+
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

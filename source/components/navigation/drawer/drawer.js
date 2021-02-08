@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import "./drawer.scss";
 
@@ -6,16 +7,20 @@ export default class Drawer extends Component {
   constructor(props) {
     super(props);
 
-    this.links = [1, 2, 3];
+    this.links = [
+      { to: "/", label: "Список", exact: true },
+      { to: "/auth", label: "Авторизация", exact: false },
+      { to: "/quiz-creator", label: "Создать тест", exact: true },
+    ];
   }
 
   renderLinks = () => {
-    return this.links.map((link, index) => {
+    return this.links.map(({ to, label, exact }, index) => {
       return (
         <li key={index}>
-          <a href="#" className="drawer__link">
-            {link}
-          </a>
+          <NavLink to={to} exact={exact} activeClassName={'d-active'} className="drawer__link">
+            {label}
+          </NavLink>
         </li>
       );
     });

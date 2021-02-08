@@ -36,6 +36,7 @@ export default class Quiz extends Component {
     ],
   };
 
+
   onQuestionClick = (itemId) => {
     if (this.state.answerState) {
       const key = Object.keys(this.state.answerState)[0];

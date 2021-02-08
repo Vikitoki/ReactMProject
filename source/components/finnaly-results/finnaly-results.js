@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../UI/Button/Button";
+import { Link } from "react-router-dom";
 import "./finnaly-results.scss";
 
 const FinnalyResults = ({ quiz, results, onRetry }) => {
@@ -56,9 +57,11 @@ const FinnalyResults = ({ quiz, results, onRetry }) => {
               Повторить
             </Button>
 
-            <Button onClick={onRetry} type="succes">
-              Переключиться на лист с вопросами
-            </Button>
+            <Link to={"/"}>
+              <Button onClick={onRetry} type="succes">
+                Переключиться на список тестов
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
