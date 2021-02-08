@@ -123,13 +123,14 @@ module.exports = {
     main: ["@babel/polyfill", "./components/index.js"],
   },
   output: {
-    publicPath: "/dist/",
+    publicPath: "/",
     path: path.resolve(__dirname, "dist"),
     filename: filename("js"),
   },
   optimization: optimization(),
   plugins: plugins(),
   devServer: {
+    historyApiFallback: true,
     port: 4200,
     overlay: true,
     hot: isDev,

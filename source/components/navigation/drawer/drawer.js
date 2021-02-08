@@ -9,7 +9,7 @@ export default class Drawer extends Component {
 
     this.links = [
       { to: "/", label: "Список", exact: true },
-      { to: "/auth", label: "Авторизация", exact: false },
+      { to: "/auth-form", label: "Авторизация", exact: false },
       { to: "/quiz-creator", label: "Создать тест", exact: true },
     ];
   }
@@ -18,7 +18,12 @@ export default class Drawer extends Component {
     return this.links.map(({ to, label, exact }, index) => {
       return (
         <li key={index}>
-          <NavLink to={to} exact={exact} activeClassName={'d-active'} className="drawer__link">
+          <NavLink
+            to={to}
+            exact={exact}
+            activeClassName={"d-active"}
+            className="drawer__link"
+          >
             {label}
           </NavLink>
         </li>

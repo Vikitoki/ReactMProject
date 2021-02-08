@@ -3,7 +3,7 @@ import Layout from "../../hoc/layout/layout";
 import Quiz from "../../containers/quiz/quiz";
 import QuizCreator from "../../containers/quiz-creator/quiz-creator";
 import QuizList from "../../containers/quiz-list/quiz-list";
-import Auth from "../../containers/auth/auth";
+import AuthForm from "../../containers/auth-form/auth-form";
 import { Route, Switch } from "react-router-dom";
 
 export default class App extends Component {
@@ -11,7 +11,7 @@ export default class App extends Component {
     return (
       <Layout>
         <Switch>
-          <Route path="/auth" component={Auth} />
+          <Route path="/auth-form" component={AuthForm} />
           <Route path="/quiz-creator" component={QuizCreator} />
           <Route path="/quiz/:id" component={Quiz} />
           <Route path="/" component={QuizList} />
