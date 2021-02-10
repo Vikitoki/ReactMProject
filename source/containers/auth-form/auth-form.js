@@ -104,7 +104,7 @@ export default class AuthForm extends Component {
           touched={control.touched}
           label={control.label}
           shouldValidate={!!control.validation}
-          onChange={() => {
+          onChange={(event) => {
             this.onChangeHandler(event, controlName);
           }}
         />

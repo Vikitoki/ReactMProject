@@ -1,0 +1,33 @@
+.quiz-creator {
+  flex: 1 1 auto;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(90, 157, 235);
+  &__title {
+    display: block;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+  }
+
+  &__select {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    &:first-child {
+      margin-bottom: 10px;
+
+      border-bottom: 1px solid gray;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.select__item {
+  display: block;
+  width: 100%;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  select {
+    display: block;
+    min-height: 30px;
+    width: 100%;
+
+    background: none;
+    border: 2px solid #fff;
+  }
+
+  option {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+
+    background: none;
+    border: none;
+  }
+}
